@@ -5,5 +5,7 @@ inputs:
   release_version:
     description: 'Specify release version to use. Automatically determined if unset.'
 runs:
-  using: 'node12'
-  main: 'dist/index.js'
+  using: composite
+  steps:
+    - run: ${{ github.action_path }}/action
+      shell: bash

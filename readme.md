@@ -9,7 +9,7 @@ First `uses` the action, the pass the `BI_LDFLAGS` env variable as your
 `-ldflags` argument to `go build`.
 
 ```yaml
-- uses: daaku/go-buildinfo@v1.0.2
+- uses: daaku/go-buildinfo@v2.0.0
 - name: Build
   run: go build -trimpath -ldflags="$BI_LDFLAGS" ./...
 ```
