@@ -15,7 +15,7 @@ jobs:
     - uses: actions/setup-go@v4
       with:
         go-version: stable
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - uses: ./
       with:
         release_version: ${{ github.event.inputs.release_version }}
